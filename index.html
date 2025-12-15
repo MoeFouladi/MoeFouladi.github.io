@@ -2,88 +2,179 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Moe Fouladi | Systems & Networking Engineer</title>
+  <title>Moe Fouladi | Systems & Networking Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; max-width: 900px; line-height: 1.6; }
-    h1, h2, h3 { color: #222; margin-top: 1.5em; }
-    .project { margin-bottom: 1.5em; }
-    .tagline { font-size: 1.2em; font-style: italic; margin-bottom: 1em; color: #555; }
-    a { color: #0066cc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px auto;
+      max-width: 900px;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1.6em;
+      color: #222;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .tagline {
+      font-size: 1.15em;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1.2em;
+    }
+
+    .project {
+      margin-bottom: 2.5em;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.5em 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
 
-<h1>Moe Fouladi</h1>
-<p class="tagline">Computer Engineering Technology student with hands-on experience in system administration, networking, and embedded systems. Completed two IT co-ops at Multimatic and Kinectrics, managing enterprise systems, servers, and automation environments. Graduating in Fall 2025 and seeking a full-time role in computer industry or IT. </p>
+<h1>Moe Fouladi</h1>
 
-<p>I have completed my Computer Engineering Technology program and have built projects across the systems stack—from low‑level C socket servers and FreeRTOS tasks to IoT sensor networks and Java/Android applications.  
-I enjoy solving real‑world problems, configuring networks, and can say I understanding how software and hardware interact.</p>
+<p class="tagline">
+Computer Engineering Technology graduate with hands-on experience in system administration,
+networking, and embedded systems. Completed two IT co-ops at Multimatic and Kinectrics,
+supporting enterprise infrastructure, servers, and automation environments.
+Graduating Fall 2025 and seeking a full-time role in IT, systems, or networking.
+</p>
+
+<p>
+I have completed the Computer Engineering Technology program and built projects across the
+systems stack, ranging from low-level C socket servers and FreeRTOS task-based embedded systems
+to IoT sensor networks and Java and Android applications.
+I enjoy solving real-world technical problems and working at the intersection of software,
+hardware, and networked systems.
+</p>
+
+<hr>
+
 <h2>Selected Projects</h2>
-
 
 <div class="project">
   <h3>Smart Elder Monitor IoT System</h3>
-<img src="images/SEM.png" alt="Smart Elder Monitor Architecture" style="max-width:100%; height:auto;">
-<img src="images/SEM2.png" alt="Smart Elder Monitor Dashboard" style="max-width:100%; height:auto;">
 
-  <p>An IoT monitoring system using Raspberry Pi and various sensors (temperature,GPS, motion, and SOS button) to track safety conditions.  Data is sent to a dashboard via MQTT and alerts are triggered on anomalies.  It uses firestore as a database to collect and send over data.</p>
-  <p><strong>Tech:</strong> Python, Raspberry Pi, MQTT, Sensors, InfluxDB</p>
-  <a href="https://github.com/EricSorokan8430/SmartElderMonitor">View on GitHub</a>
+  <img src="images/SEM.png" alt="Smart Elder Monitor system architecture diagram">
+  <img src="images/SEM2.png" alt="Smart Elder Monitor dashboard interface">
+
+  <p>
+  Designed and implemented an IoT monitoring system using a Raspberry Pi and multiple sensors
+  including temperature, GPS, motion detection, and an SOS button.
+  Sensor data is transmitted using MQTT to a backend dashboard where alerts are triggered
+  when abnormal conditions are detected.
+  </p>
+
+  <p>
+  <strong>Tech:</strong> Python, Raspberry Pi, MQTT, Firebase Firestore, Sensors
+  </p>
+
+  <p>
+  <a href="https://github.com/EricSorokan8430/SmartElderMonitor" target="_blank">
+  View on GitHub
+  </a>
+  </p>
 </div>
+
 <div class="project">
   <h3>FreeRTOS Task Management on RP2040</h3>
-  <p>Implemented multiple real‑time tasks on the RP2040 microcontroller, demonstrating queues, semaphores, and task scheduling for sensor data processing.</p>
-  <p><strong>Tech:</strong> C/C++, FreeRTOS, RP2040</p>
 
+  <p>
+  Developed a real-time embedded system on the RP2040 microcontroller using FreeRTOS.
+  Implemented multiple concurrent tasks communicating through queues and semaphores
+  to process sensor data reliably under real-time constraints.
+  </p>
+
+  <p>
+  <strong>Tech:</strong> C, C++, FreeRTOS, RP2040, Pico SDK
+  </p>
 </div>
 
+<hr>
 
 <h2>Skills</h2>
 
 <h3>Systems & Networking</h3>
 <ul>
-  <li>Linux/Unix system administration, bash scripting</li>
-  <li>TCP/IP networking, VLANs, routing, DHCP & DNS</li>
-  <li>Cisco IOS configuration, VLAN and subnet planning</li>
-  <li>Virtualization & containers (Docker, VirtualBox)</li>
+  <li>Linux and Unix system administration, Bash scripting</li>
+  <li>TCP/IP networking, VLANs, routing, DHCP, DNS</li>
+  <li>Cisco IOS configuration and subnet planning</li>
+  <li>Virtualization and containers using Docker and VirtualBox</li>
 </ul>
 
-<h3>Embedded & IoT</h3>
+<h3>Embedded Systems & IoT</h3>
 <ul>
-  <li>C and C++ for microcontrollers</li>
-  <li>FreeRTOS, RP2040, Raspberry Pi</li>
-  <li>Sensor integration (temperature, motion, wireless)</li>
-  <li>MQTT, serial communication protocols</li>
+  <li>C and C++ programming for microcontrollers</li>
+  <li>FreeRTOS, RP2040, Raspberry Pi</li>
+  <li>Sensor integration and hardware interfacing</li>
+  <li>MQTT and serial communication protocols</li>
 </ul>
 
 <h3>Software Development</h3>
 <ul>
-  <li>Java, JavaFX for desktop applications</li>
-  <li>Android (Java) with Firebase services</li>
+  <li>Java and JavaFX desktop applications</li>
+  <li>Android development using Java and Firebase</li>
   <li>Python scripting and data processing</li>
 </ul>
 
 <h3>Tools & Platforms</h3>
 <ul>
+  <li>Git and GitHub</li>
   <li>Android Studio</li>
-  <li>Git & GitHub</li>
   <li>Packet Tracer, Wireshark</li>
   <li>Microsoft Azure and Amazon AWS</li>
-
 </ul>
+
+<hr>
+
 <h2>Contact</h2>
+
 <p>
-  GitHub: <a href="https://github.com/MoeFouladi">github.com/MoeFouladi</a><br>
-  LinkedIn: <a href="https://www.linkedin.com/in/moefouladi/">linkedin.com/in/moefouladi</a><br>
-  Email: mh.fouladi@hotmail.com
+GitHub:
+<a href="https://github.com/MoeFouladi" target="_blank">
+github.com/MoeFouladi
+</a><br>
+
+LinkedIn:
+<a href="https://www.linkedin.com/in/moefouladi/" target="_blank">
+linkedin.com/in/moefouladi
+</a><br>
+
+Email: mh.fouladi@hotmail.com
 </p>
 
 </body>
 </html>
-
-
-
-
-
