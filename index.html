@@ -13,52 +13,32 @@
       line-height: 1.6;
       color: #222;
     }
-
     h1, h2, h3 {
       margin-top: 1.6em;
       color: #222;
     }
-
-    h1 {
-      margin-top: 0;
-    }
-
+    h1 { margin-top: 0; }
     .tagline {
       font-size: 1.15em;
       font-style: italic;
       color: #555;
       margin-bottom: 1.2em;
     }
-
-    .project {
-      margin-bottom: 2.5em;
-    }
-
+    .project { margin-bottom: 2.5em; }
     img {
       max-width: 100%;
       height: auto;
       margin: 10px 0;
       border: 1px solid #ddd;
     }
-
     hr {
       border: none;
       border-top: 1px solid #ddd;
       margin: 2.5em 0;
     }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
+    ul { padding-left: 20px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 
@@ -67,19 +47,29 @@
 <h1>Moe Fouladi</h1>
 
 <p class="tagline">
-Computer Engineering Technology graduate with hands-on experience in system administration,
-networking, and embedded systems. Completed two IT co-ops at Multimatic and Kinectrics,
-supporting enterprise infrastructure, servers, and automation environments.
-Graduating Fall 2025 and seeking a full-time role in IT, systems, or networking.
+Computer Engineering Technology graduate with hands-on enterprise experience in system administration, Active Directory, virtualization, and endpoint security. Completed two IT co-ops at Multimatic and Kinectrics. Expected graduation January 2026 and seeking a full-time role in Systems Administration or Infrastructure.
 </p>
 
 <p>
-I have completed the Computer Engineering Technology program and built projects across the
-systems stack, ranging from low-level C socket servers and FreeRTOS task-based embedded systems
-to IoT sensor networks and Java and Android applications.
-I enjoy solving real-world technical problems and working at the intersection of software,
-hardware, and networked systems.
+I have completed the Computer Engineering Technology program and built projects across the systems stack, ranging from low-level embedded systems and IoT networks to enterprise Windows/Linux infrastructure and automation.
 </p>
+
+<hr>
+
+<h2>Professional Experience</h2>
+
+<p><strong>System Administrator (Co-op)</strong> — Multimatic, Markham, ON | Sept 2024 – Apr 2025</p>
+<ul>
+  <li>Administered Windows Server, Linux (CentOS), Active Directory, and VMware vSphere environments</li>
+  <li>Implemented CrowdStrike endpoint protection and managed Jira incident resolution for 200+ users</li>
+  <li>Handled backups, tape rotations, Lansweeper inventory, and group policy management</li>
+</ul>
+
+<p><strong>IT Technician (Co-op)</strong> — Kinectrics, Toronto, ON | Jan 2024 – May 2024</p>
+<ul>
+  <li>Supported Active Directory user provisioning, permissions, and enterprise troubleshooting</li>
+  <li>Deployed virtual machines, VPNs, and secure system imaging</li>
+</ul>
 
 <hr>
 
@@ -87,75 +77,62 @@ hardware, and networked systems.
 
 <div class="project">
   <h3>Smart Elder Monitor IoT System</h3>
-
   <img src="images/SEM.png" alt="Smart Elder Monitor system architecture diagram">
   <img src="images/SEM2.png" alt="Smart Elder Monitor dashboard interface">
 
   <p>
-  Designed and implemented an IoT monitoring system using a Raspberry Pi and multiple sensors
-  including temperature, GPS, motion detection, and an SOS button.
-  Sensor data is transmitted using MQTT to a backend dashboard where alerts are triggered
-  when abnormal conditions are detected.
+  <strong>Group project – Humber College</strong><br>
+  Designed and implemented an IoT monitoring system using Raspberry Pi and multiple sensors (temperature, GPS, motion, SOS button). Sensor data transmitted via MQTT to a backend dashboard with real-time alerts.
   </p>
+
+  <p><strong>My contributions:</strong> Hardware integration (Raspberry Pi + sensors), MQTT/Firebase backend, Android app alerts, and full IoT deployment.</p>
 
   <p>
   <strong>Tech:</strong> Python, Raspberry Pi, MQTT, Firebase Firestore, Sensors
   </p>
 
   <p>
-  <a href="https://github.com/EricSorokan8430/SmartElderMonitor" target="_blank">
-  View on GitHub
-  </a>
+  <a href="https://github.com/EricSorokan8430/SmartElderMonitor" target="_blank">View on GitHub (original repo)</a>
   </p>
 </div>
 
 <div class="project">
   <h3>FreeRTOS Task Management on RP2040</h3>
-
   <p>
-  Developed a real-time embedded system on the RP2040 microcontroller using FreeRTOS.
-  Implemented multiple concurrent tasks communicating through queues and semaphores
-  to process sensor data reliably under real-time constraints.
+  Developed a real-time embedded system on the RP2040 microcontroller using FreeRTOS. Implemented concurrent tasks communicating through queues, semaphores, and mailboxes for reliable sensor data processing under real-time constraints.
   </p>
-
-  <p>
-  <strong>Tech:</strong> C, C++, FreeRTOS, RP2040
-  </p>
+  <p><strong>Tech:</strong> C, C++, FreeRTOS, RP2040</p>
 </div>
 
 <hr>
 
 <h2>Skills</h2>
 
+<h3>Enterprise Systems & Infrastructure</h3>
+<ul>
+  <li>Windows Server, Active Directory, Group Policy management</li>
+  <li>VMware vSphere, Hyper-V, Azure virtualization</li>
+  <li>CrowdStrike endpoint protection & Lansweeper asset tracking</li>
+  <li>Jira incident management, tape backups & disaster recovery</li>
+</ul>
+
 <h3>Systems & Networking</h3>
 <ul>
-  <li>Linux and Unix system administration, Bash scripting</li>
-  <li>TCP/IP networking, VLANs, routing, DHCP, DNS</li>
-  <li>Cisco IOS configuration and subnet planning</li>
-  <li>Virtualization and containers using Docker and VirtualBox</li>
+  <li>Linux/Unix administration & Bash scripting</li>
+  <li>TCP/IP networking, VPNs, firewalls</li>
+  <li>Cisco IOS, VLANs, DHCP, DNS</li>
 </ul>
 
 <h3>Embedded Systems & IoT</h3>
 <ul>
-  <li>C and C++ programming for microcontrollers</li>
-  <li>FreeRTOS, RP2040, Raspberry Pi</li>
-  <li>Sensor integration and hardware interfacing</li>
-  <li>MQTT and serial communication protocols</li>
+  <li>C / C++ for microcontrollers, FreeRTOS, RP2040, Raspberry Pi</li>
+  <li>Sensor integration, MQTT, serial protocols</li>
 </ul>
 
 <h3>Software Development</h3>
 <ul>
-  <li>Java and JavaFX desktop applications</li>
-  <li>Android development using Java and Firebase</li>
-  <li>Python scripting and data processing</li>
-</ul>
-
-<h3>Tools & Platforms</h3>
-<ul>
-  <li>Git and GitHub</li>
-  <li>Android Studio</li>
-  <li>Packet Tracer, Wireshark</li>
-  <li>Microsoft Azure and Amazon AWS</li>
+  <li>Python, Java, Android development with Firebase</li>
+  <li>Git, GitHub, Android Studio</li>
 </ul>
 
 <hr>
@@ -163,16 +140,8 @@ hardware, and networked systems.
 <h2>Contact</h2>
 
 <p>
-GitHub:
-<a href="https://github.com/MoeFouladi" target="_blank">
-github.com/MoeFouladi
-</a><br>
-
-LinkedIn:
-<a href="https://www.linkedin.com/in/moefouladi/" target="_blank">
-linkedin.com/in/moefouladi
-</a><br>
-
+GitHub: <a href="https://github.com/MoeFouladi" target="_blank">github.com/MoeFouladi</a><br>
+LinkedIn: <a href="https://www.linkedin.com/in/moefouladi/" target="_blank">linkedin.com/in/moefouladi</a><br>
 Email: mh.fouladi@hotmail.com
 </p>
 
